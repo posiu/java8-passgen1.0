@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Generator {
 
 
-    String[] ts_allChars = {"!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "`", "~", ";",
+    String[] allChars = {"!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "`", "~", ";",
         ":", "'", "<", ",", ">", ".", "/", "?", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q",
         "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q",
         "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
@@ -36,7 +36,7 @@ public class Generator {
     protected String generatePass(int passLength){
 
         for (int i = 0; i < passLength; i++) {
-            String tmpPass = ts_allChars[random.nextInt(ts_allChars.length)]; //selecting a single char from table
+            String tmpPass = allChars[random.nextInt(allChars.length)]; //selecting a single char from table
             sb.append(tmpPass); // selected char added to a stringbuilder
 
             if(sb.length() == passLength){ //if pass have a proper length, then print it
