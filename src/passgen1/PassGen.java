@@ -18,12 +18,12 @@ public class PassGen {
 
         System.out.println();
 
-        Generator mHowMany = new Generator(); //constructor
+        Generator mHowMany = new Generator(); 
         mHowMany.getHowManyPasses();
         int howMany = mHowMany.howManyPass;
 
 
-        Generator mPassLength = new Generator(); //constructor
+        Generator mPassLength = new Generator(); 
         mPassLength.getPassLength();
         int howLong = mPassLength.passLength;
 
