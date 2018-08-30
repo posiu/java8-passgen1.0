@@ -12,7 +12,7 @@ public class Generator {
         "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
 
     private Random random = new Random();
-    private String pass = ""; // password
+    private String pass = ""; 
     private StringBuilder sb = new StringBuilder(pass);
     int passLength;
     int howManyPass;
@@ -37,9 +37,9 @@ public class Generator {
 
         for (int i = 0; i < passLength; i++) {
             String tmpPass = allChars[random.nextInt(allChars.length)]; //selecting a single char from table
-            sb.append(tmpPass); // selected char added to a stringbuilder
+            sb.append(tmpPass);
 
-            if(sb.length() == passLength){ //if pass have a proper length, then print it
+            if(sb.length() == passLength){ 
                 System.out.println(sb.toString());
 
             }
